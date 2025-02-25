@@ -14,5 +14,5 @@
 
 ## Features
 
--   Creat interactive maps with minimal lines of code 
+-   Creat interactive maps with minimal lines of code
 -   Greatea tool for GIS
