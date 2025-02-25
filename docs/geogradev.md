@@ -1,4 +1,0 @@
- 
-# geogradev module
-
-::: geogradev.geogradev
