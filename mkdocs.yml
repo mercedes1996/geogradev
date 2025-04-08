@@ -41,9 +41,10 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          setup_commands:
-            - import sys
-            - sys.path.append(".")
+          options:
+            setup:
+              - "import sys"
+              - "sys.path.append('.')"
   # - pdf-export
   - mkdocs-jupyter:
       include_source: True
