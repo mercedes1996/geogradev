@@ -1,1 +1,1 @@
-"""Unit test package for geogradev."""
+# This makes 'tests' an importable package
