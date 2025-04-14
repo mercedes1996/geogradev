@@ -23,6 +23,6 @@ jobs:
 
       - name: Run tests with pytest
         run: |
-          pytest tests/  # Este es el directorio donde deberías tener tus pruebas
+          pytest geogradev/tests/  # Cambiado a la ubicación correcta de las pruebas
 
 
