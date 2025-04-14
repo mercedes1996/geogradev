@@ -1,4 +1,4 @@
-from geogradev.utils import sumar  # cambia 'sumar' por una función real tuya
+from geogradev.utils import sumar
 
 
 def test_sumar():
