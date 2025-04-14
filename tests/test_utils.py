@@ -1,5 +1,6 @@
-from geogradev.utils import sumar
+from geogradev.utils import add
 
 
-def test_sumar():
-    assert sumar(2, 3) == 5
+def test_add():
+    # Test to ensure that the add function returns the correct sum
+    assert add(2, 3) == 5
