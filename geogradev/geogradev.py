@@ -13,11 +13,21 @@ class Map(ipyleaflet.Map):
         self.scroll_wheel_zoom = True
 
     def add_basemap(self, basemap="OpenTopoMap"):
-        url = eval(f"ipyleaflet.basemaps.{basemap}").url
+        """Add a basemap to the map.
+
+        Args:
+            basemap (str, optional): Basemap name. Defaults to "OpenTopoMap".
+        """
+        url = eval(f"ipyleaflet.basemaps.{basemap}").build_url()
         layer = ipyleaflet.Tilelayer(url=url, name=basemap)
         self.add(layer)
 
     def add_google_map(self, map_type="ROADMAP"):
+        """Add a Google Map layer to the map.
+
+        Args:
+            map_type (str, optional): Map type. Defaults to "ROADMAP".
+        """
         map_types = {
             "ROADMAP": "m",
             "SATELLITE": "s",
@@ -38,7 +48,18 @@ class Map(ipyleaflet.Map):
         hover_style=None,
         **kwargs,
     ):
+        """
+        Adds a GeoJSON layer to the map.
 
+        Args:
+            data (str or dict): The GeoJSON data or file path to a GeoJSON file.
+            zoom_to_layer (bool, optional): Whether to zoom to the layer's bounds. Defaults to True.
+            hover_style (dict, optional): Style to apply when hovering over the layer. Defaults to {"color": "yellow", "fillOpacity": 0}.
+            **kwargs: Additional keyword arguments for the ipyleaflet.GeoJSON layer.
+
+        Raises:
+            ValueError: If the data type is invalid.
+        """
         import geopandas as gpd
 
         if hover_style is None:
@@ -57,29 +78,63 @@ class Map(ipyleaflet.Map):
             self.fit_bounds([[bounds[1], bounds[0]], [bounds[3], bounds[2]]])
 
     def add_shp(self, data, **kwargs):
+        """
+        Adds a shapefile layer to the map.
 
+        Args:
+            data (str): The file path to the shapefile.
+            **kwargs: Additional keyword arguments for the GeoJSON layer.
+
+        Raises:
+            ValueError: If the shapefile cannot be read.
+        """
         import geopandas as gpd
 
-        gdp = gdp.read_file(data)
-        gdp = gdp.to_crs(espg=4326)
+        gdf = gpd.read_file(data)
+        gdf = gdf.to_crs(epsg=4326)
         geojson = gdf.__geo_interface__
         self.add_geojson(geojson, **kwargs)
 
-    def add_gdf(self, data, **kwargs):
+    def add_gdf(self, gdf, **kwargs):
+        """
+        Adds a GeoDataFrame layer to the map.
 
+        Args:
+            gdf (geopandas.GeoDataFrame): The GeoDataFrame to add.
+            **kwargs: Additional keyword arguments for the GeoJSON layer.
+        """
         gdf = gdf.to_crs(epsg=4326)
         geojson = gdf.__geo_interface__
         self.add_geojson(geojson, **kwargs)
 
     def add_vector(self, data, **kwargs):
+        """
+        Adds a vector layer to the map.
 
+        Args:
+            data (str, geopandas.GeoDataFrame, or dict): The vector data, which can be a file path, GeoDataFrame, or GeoJSON dictionary.
+            **kwargs: Additional keyword arguments for the GeoJSON layer.
+
+        Raises:
+            ValueError: If the data type is invalid.
+        """
         import geopandas as gpd
 
         if isinstance(data, str):
             gdf = gpd.read_file(data)
+            self.add_geojson(gdf, **kwargs)
         elif isinstance(data, gpd.GeoDataFrame):
             self.add_geojson(data, **kwargs)
         elif isinstance(data, dict):
             self.add_geojson(data, **kwargs)
         else:
             raise ValueError("Invalid data type")
+
+    def add_layer_control(self):
+        """
+        Adds a layer control widget to the map.
+
+        This allows users to toggle the visibility of layers on the map.
+        """
+        control = ipyleaflet.LayersControl(position="topright")
+        self.add_control(control)
