@@ -44,8 +44,11 @@ class Map(ipyleaflet.Map):
         if hover_style is None:
             hover_style = {"color": "yellow", "fillOpacity": 0}
 
-        gdf = gpd.read_file(data)
-        geojson = gdf.__geo_interface__
+        if isinstance(data, str):
+            gdf = gpd.read_file(data)
+            geojson = gdf.__geo_interface__
+        elif isinstance(data, dict):
+            geojson = data
         layer = ipyleaflet.GeoJSON(data=geojson, hover_style=hover_style, **kwargs)
         self.add_layer(layer)
 
@@ -61,4 +64,22 @@ class Map(ipyleaflet.Map):
         gdp = gdp.to_crs(espg=4326)
         geojson = gdf.__geo_interface__
         self.add_geojson(geojson, **kwargs)
-        self.add_layer(Layer)
+
+    def add_gdf(self, data, **kwargs):
+
+        gdf = gdf.to_crs(epsg=4326)
+        geojson = gdf.__geo_interface__
+        self.add_geojson(geojson, **kwargs)
+
+    def add_vector(self, data, **kwargs):
+
+        import geopandas as gpd
+
+        if isinstance(data, str):
+            gdf = gpd.read_file(data)
+        elif isinstance(data, gpd.GeoDataFrame):
+            self.add_geojson(data, **kwargs)
+        elif isinstance(data, dict):
+            self.add_geojson(data, **kwargs)
+        else:
+            raise ValueError("Invalid data type")
