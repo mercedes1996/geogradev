@@ -29,6 +29,7 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.top
+        - navigation.sidebar
         - search.highlight
         - search.share
     custom_dir: "docs/overrides"
@@ -37,22 +38,20 @@ theme:
         code: Regular
 
 plugins:
-  - search
-  - mkdocstrings:
-      handlers:
-        python:
-          options:
-            setup:
-              - "import sys"
-              - "sys.path.append('.')"
-  # - pdf-export
-  - mkdocs-jupyter:
-      include_source: True
-      ignore_h1_titles: True
-      execute: True
-      allow_errors: false
-      ignore: ["conf.py"]
-      execute_ignore: ["*ignore.ipynb"]
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - git-revision-date-localized:
+          enable_creation_date: true
+          type: timeago
+    # - pdf-export
+    - mkdocs-jupyter:
+          include_source: True
+          ignore_h1_titles: True
+          execute: True
+          allow_errors: false
+          ignore: ["conf.py"]
+          execute_ignore: ["*ignore.ipynb"]
 
 markdown_extensions:
     - admonition
@@ -82,8 +81,11 @@ nav:
     - Changelog: changelog.md
     - Report Issues: https://github.com/mercedes1996/geogradev/issues
     - Examples:
-        - examples/intro.ipynb
-        - examples/map.ipynb
+          - examples/intro.ipynb
+          - examples/folium.ipynb
+          - examples/map.ipynb
+          - examples/split_map.ipynb
     - API Reference:
           - geogradev module: geogradev.md
           - common module: common.md
+          - foliummap module: foliumap.md
