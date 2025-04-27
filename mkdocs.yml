@@ -29,7 +29,6 @@ theme:
         - navigation.instant
         - navigation.tracking
         - navigation.top
-        - navigation.sidebar
         - search.highlight
         - search.share
     custom_dir: "docs/overrides"
@@ -89,3 +88,4 @@ nav:
           - geogradev module: geogradev.md
           - common module: common.md
           - foliummap module: foliumap.md
+

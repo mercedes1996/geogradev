@@ -1,3 +1,3 @@
 # foliumap module
 
-::: geogradev.foliumap
+::: geogradev.foliummap
