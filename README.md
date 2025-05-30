@@ -6,7 +6,7 @@
 
 
 **A python package for geospatial analysis and mapping**
-***exploring new possibilities in geospatial analysis with a creative twist!***
+**Exploring new possibilities in geospatial analysis with a creative twist!**
 
 -   Free software: MIT License
 -   Documentation: https://mercedes1996.github.io/geogradev
