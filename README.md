@@ -10,7 +10,7 @@
 
 -   Free software: MIT License
 -   Documentation: https://mercedes1996.github.io/geogradev
-    
+
 
 ## Features
 
