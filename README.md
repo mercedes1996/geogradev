@@ -10,8 +10,9 @@
 
 -   Free software: MIT License
 -   Documentation: https://mercedes1996.github.io/geogradev
-    
+
 
 ## Features
 
--   TODO
+-   Creat interactive maps with minimal lines of code
+-   Great tool for GIS
