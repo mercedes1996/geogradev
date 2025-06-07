@@ -16,4 +16,7 @@
 
 -   Creat interactive maps with minimal lines of code
 -   Great tool for GIS
+features
+-   Hello World
 -   Calculate map
+main
