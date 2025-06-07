@@ -3,3 +3,5 @@
 __author__ = """mercedes"""
 __email__ = "aguirrecername@gmail.com"
 __version__ = "1.1.2"
+
+from .geogradev import Map
