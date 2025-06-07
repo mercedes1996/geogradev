@@ -13,4 +13,12 @@
 
 ## Features
 
--   TODO
+-   Create interactive map
+-   Process geospatial data
+
+## Usage
+
+```python
+import geogradev
+import os
+```
