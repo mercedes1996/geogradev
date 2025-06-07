@@ -1,17 +1,9 @@
 """Main module."""
 
-import ipyleaflet
+import intro
 
 
-class Map(ipyleaflet.Map):
-    def __init__(self, center=[20, 0], zoom=2, height="600px", **kwargs):
-        super().__init__(center=center, zoom=zoom, **kwargs)
-
-
-# geogradev.py
-__all__ = ["Map"]
-
-
-class Map(ipyleaflet.Map):
-    def __init__(self, center=[20, 0], zoom=2, height="600px", **kwargs):
-        super().__init__(center=center, zoom=zoom, **kwargs)
+class Map(intro.Map):
+    def __init__(self, center=(0, 0), zoom=2, **kwargs):
+        super().__init__(location=center, zoom_start=zoom, **kwargs)
+        intro.LayerControl().add_to(self)
