@@ -85,6 +85,7 @@ nav:
         - examples/folium.ipynb
         - examples/raster.ipynb
         - examples/split_map.ipynb
+        - examples/dyba.ipynb
     - API Reference:
           - geogradev module: geogradev.md
           - common module: common.md
