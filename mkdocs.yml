@@ -87,6 +87,7 @@ nav:
         - examples/split_map.ipynb
         - examples/dyba.ipynb
         - examples/Communities_Native.ipynb
+        - examples/gee.ipynb
     - API Reference:
           - geogradev module: geogradev.md
           - common module: common.md
