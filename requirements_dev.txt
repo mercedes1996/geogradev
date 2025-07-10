@@ -4,7 +4,9 @@ build
 bump-my-version
 click
 codespell
+earthengine-api==1.5.23
 flake8
+geemap==0.35.3
 
 ipykernel
 livereload
