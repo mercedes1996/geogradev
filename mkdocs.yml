@@ -1,94 +1,90 @@
+
 site_name: geogradev
-site_description: A python package for geospatial analysis and mapping
-site_author: mercedes1996
+site_description: A Python package for geospatial analysis and mapping
+site_author: Mercedes Aguirre
 site_url: https://mercedes1996.github.io/geogradev
 repo_url: https://github.com/mercedes1996/geogradev
 
-copyright: "Copyright &copy; 2024 - 2024 mercedes"
+copyright: "Copyright &copy; 2026 Mercedes Aguirre"
 
 theme:
-    palette:
-        - scheme: default
-          #   primary: blue
-          #   accent: indigo
-          toggle:
-              icon: material/toggle-switch-off-outline
-              name: Switch to dark mode
-        - scheme: slate
-          primary: indigo
-          accent: indigo
-          toggle:
-              icon: material/toggle-switch
-              name: Switch to light mode
-    name: material
-    icon:
-        repo: fontawesome/brands/github
-    # logo: assets/logo.png
-    # favicon: assets/favicon.png
-    features:
-        - navigation.instant
-        - navigation.tracking
-        - navigation.top
-        - search.highlight
-        - search.share
-    custom_dir: "docs/overrides"
-    font:
-        text: Google Sans
-        code: Regular
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+  custom_dir: docs/overrides
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+  font:
+    text: Google Sans
+    code: Regular
 
 plugins:
-    - search
-    - mkdocstrings
-    - git-revision-date
-    - git-revision-date-localized:
-          enable_creation_date: true
-          type: timeago
-    # - pdf-export
-    - mkdocs-jupyter:
-          include_source: True
-          ignore_h1_titles: True
-          execute: False
-          allow_errors: false
-          ignore: ["conf.py"]
-          execute_ignore: ["*ignore.ipynb", "*gee.ipynb"]
+  - search
+  - mkdocstrings
+  - git-revision-date
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - mkdocs-jupyter:
+      include_source: true
+      ignore_h1_titles: true
+      execute: false
+      allow_errors: false
+      ignore:
+        - conf.py
+      execute_ignore:
+        - "*ignore.ipynb"
+        - "*gee.ipynb"
 
 markdown_extensions:
-    - admonition
-    - abbr
-    - attr_list
-    - def_list
-    - footnotes
-    - meta
-    - md_in_html
-    - pymdownx.superfences
-    - pymdownx.highlight:
-          linenums: true
-    - toc:
-          permalink: true
-
-# extra:
-#     analytics:
-#         provider: google
-#         property: UA-XXXXXXXXX-X
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+  - toc:
+      permalink: true
 
 nav:
-    - Home: index.md
-    - Installation: installation.md
-    - Usage: usage.md
-    - Contributing: contributing.md
-    - FAQ: faq.md
-    - Changelog: changelog.md
-    - Report Issues: https://github.com/mercedes1996/geogradev/issues
-    - Examples:
-        - examples/intro.ipynb
-        - examples/map.ipynb
-        - examples/folium.ipynb
-        - examples/raster.ipynb
-        - examples/split_map.ipynb
-        - examples/dyba.ipynb
-        - examples/Communities_Native.ipynb
-        - examples/gee.ipynb
-    - API Reference:
-          - geogradev module: geogradev.md
-          - common module: common.md
-          - foliumap module: foliumap.md
+  - Home: index.md
+  - Getting Started:
+      - Installation: installation.md
+      - Usage: usage.md
+  - Examples:
+      - Introduction: examples/intro.ipynb
+      - Interactive Maps: examples/map.ipynb
+      - Folium: examples/folium.ipynb
+      - Raster Analysis: examples/raster.ipynb
+      - Split Map: examples/split_map.ipynb
+      - DYBA: examples/dyba.ipynb
+      - Native Communities: examples/Communities_Native.ipynb
+      - Google Earth Engine: examples/gee.ipynb
+  - API Reference:
+      - geogradev module: geogradev.md
+      - common module: common.md
+      - foliumap module: foliumap.md
+  - Project:
+      - Contributing: contributing.md
+      - FAQ: faq.md
+      - Changelog: changelog.md
+      - Report Issues: https://github.com/mercedes1996/geogradev/issues
