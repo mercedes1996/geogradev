@@ -1,4 +1,5 @@
-# 🌐 Geogradev
+
+# 🌐 geogradev
 
 ### Geospatial analysis, mapping, and Python tools for exploring our world.
 
@@ -19,18 +20,15 @@
 
 ---
 
+## 🌍 Overview
 
-**Geogradev** is a Python package for geospatial analysis and mapping,
-created to explore geographic data, develop practical GIS workflows,
-and make geospatial tools more accessible through Python.
+**geogradev** is an open-source Python package for geospatial analysis, mapping, and spatial data exploration.
 
-The project brings together my interests in geography, geomatics,
-programming, and the use of geospatial technologies to understand
-the territories we inhabit.
+The project brings together geography, geomatics, programming, and open-source technologies to support the exploration of geographic data and the development of practical GIS workflows.
 
-From interactive maps to spatial data processing, Geogradev is
-a space for developing, testing, and sharing geospatial tools
-and practical applications.
+From interactive mapping to spatial data processing, geogradev is a space for developing, testing, documenting, and sharing geospatial tools and applications.
+
+The project is developed with a particular interest in environmental and territorial applications, including examples inspired by Peru and its diverse landscapes.
 
 <p align="center">
   <a href="https://mercedes1996.github.io/geogradev/">
@@ -38,26 +36,24 @@ and practical applications.
   </a>
 </p>
 
-## 💻 What can you explore?
+## 💻 Features
 
-Geogradev is designed to support geospatial workflows and
-experimentatio with geographic data.
+geogradev brings together tools and examples for exploring geospatial workflows with Python.
 
 | Feature | Description |
 |---|---|
 | Interactive mapping | Create and explore interactive maps using Python. |
 | Geospatial data processing | Work with geographic data and spatial analysis workflows. |
 | GIS applications | Explore practical applications of Python in Geographic Information Systems. |
-| Reproducible examples | Learn from notebooks, scripts, and geospatial exercises. |
+| Reproducible examples | Learn from Jupyter notebooks, scripts, and geospatial exercises. |
 
-For detailed examples and supported functionality,
-visit the [documentation](https://mercedes1996.github.io/geogradev/).
+For details about the currently available modules and functionality, see the [documentation](https://mercedes1996.github.io/geogradev/).
 
-## 👩🏽‍🏫 Getting started
+## 🚀 Getting started
 
 ### Installation
 
-Install Geogradev from PyPI:
+Install geogradev from PyPI:
 
 ```bash
 pip install geogradev
@@ -73,66 +69,64 @@ import geogradev
 print(geogradev.__version__)
 ```
 
-Explore the package modules and examples to discover
-the available tools and workflows.
+The package includes modules for geospatial workflows and mapping. Consult the documentation for available functions, dependencies, and examples.
 
-> Note: Geogradev's functionality and dependencies may vary
-> across versions. Check the installation guide for
-> the requirements of your environment.
+> **Note:** Some geospatial workflows may require additional dependencies or external services. Check the installation guide and the requirements of each module before using them.
 
-## 📚 Documentation & Learning resources
+## 📚 Documentation and learning resources
 
-Explore the documentation and examples:
+Explore the documentation and practical examples:
 
 | Resource | Description |
 |---|---|
 | [Documentation](https://mercedes1996.github.io/geogradev/) | Main documentation and project guide. |
 | [Installation](https://mercedes1996.github.io/geogradev/installation/) | Installation instructions and requirements. |
 | [Usage](https://mercedes1996.github.io/geogradev/usage/) | Usage guide and examples. |
-| [Examples](https://mercedes1996.github.io/geogradev/) | Notebooks and practical geospatial workflows. |
+| [Examples](https://mercedes1996.github.io/geogradev/) | Jupyter notebooks and practical geospatial workflows. |
 | [API Reference](https://mercedes1996.github.io/geogradev/geogradev/) | Package and module reference. |
 | [Report an issue](https://github.com/mercedes1996/geogradev/issues) | Report bugs or suggest improvements. |
 
-## 🔨 About the project
+## 🗺️ Examples and applications
 
-Geogradev is an ongoing learning and development project.
+The project includes Jupyter notebooks exploring topics such as:
 
-As a geographer, I am interested in exploring how programming,
-open-source technologies, and geospatial data can help us
-understand environmental processes and territorial dynamics.
+- Interactive mapping and map visualization.
+- Vector and raster data workflows.
+- Geospatial applications and spatial analysis.
+- Google Earth Engine and environmental applications.
 
-Many of the examples and exercises are inspired by geographic
-and environmental applications, particularly those related
-to Peru and its diverse landscapes.
+Examples are provided for educational and exploratory purposes. Refer to each notebook for its data sources, dependencies, and execution requirements.
 
-I will continue improving the package, documenting workflows,
-and sharing new experiments as I learn and develop new tools.
+## 👩🏽‍💻 About the project
 
-## 🐦 Author
+geogradev is an ongoing open-source learning and development project created by Mercedes, a geographer interested in the intersection of geography, programming, and geospatial technologies.
 
-**Mercedes**
+The project reflects an interest in developing accessible and reusable tools for geographic analysis, environmental applications, and territorial research.
 
-I work with geographic information systems, remote sensing,
-spatial analysis, and geospatial technologies, with a particular
-interest in environmental and territorial applications.
+As the project evolves, its functionality, documentation, and examples will continue to improve.
+
+## 👩🏽 Author
+
+**Mercedes Aguirre**
+
+Geographer interested in Geographic Information Systems (GIS), remote sensing, spatial analysis, and open-source geospatial technologies, particularly for environmental and territorial applications.
 
 - GitHub: [@mercedes1996](https://github.com/mercedes1996)
 - LinkedIn: [Connect with me](https://www.linkedin.com/in/mercedesac)
 
-## 💟 Contributions
+## 🤝 Contributing
 
 Suggestions, feedback, bug reports, and contributions are welcome.
 
-Please read the [Contributing Guide](https://mercedes1996.github.io/geogradev/contributing/)
-before submitting changes.
+Please read the [Contributing Guide](https://mercedes1996.github.io/geogradev/contributing/) before submitting changes.
+
+To report a bug or suggest a feature, visit the [GitHub Issues](https://github.com/mercedes1996/geogradev/issues) page.
 
 ## 📑 License
 
-Geogradev is distributed under the
-[MIT License](https://github.com/mercedes1996/geogradev/blob/main/LICENSE).
+geogradev is distributed under the [MIT License](https://github.com/mercedes1996/geogradev/blob/main/LICENSE).
 
-You are welcome to explore, use, and adapt the project
-according to the terms of the license.
+You are welcome to explore, use, and adapt the project according to the terms of the license.
 
 ---
 
