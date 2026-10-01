@@ -9,15 +9,15 @@ It brings together geography, geomatics, programming, and open-source technologi
 From interactive mapping to spatial data processing, geogradev is a space for developing, testing, documenting, and sharing geospatial tools and applications.
 
 <p align="center">
-  <a href="installation.md">
+  <a href="installation/">
     <strong>Get Started</strong>
   </a>
   &nbsp;&nbsp;
-  <a href="examples/intro.ipynb">
+  <a href="examples/intro/">
     <strong>Explore Examples</strong>
   </a>
   &nbsp;&nbsp;
-  <a href="geogradev.md">
+  <a href="geogradev/">
     <strong>API Reference</strong>
   </a>
 </p>
