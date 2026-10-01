@@ -117,7 +117,7 @@ The documentation includes Jupyter notebooks exploring different geospatial work
 
     Installation instructions and introductory guides.
 
-    [:octicons-arrow-right-24: Getting Started](installation.md)
+    [-> Getting Started](installation.md)
 
 -   **API Reference**
 
@@ -125,7 +125,7 @@ The documentation includes Jupyter notebooks exploring different geospatial work
 
     Explore the package modules, functions, and available documentation.
 
-    [:octicons-arrow-right-24: API Reference](geogradev.md)
+    [-> API Reference](geogradev.md)
 
 -   **Contributing**
 
@@ -133,7 +133,7 @@ The documentation includes Jupyter notebooks exploring different geospatial work
 
     Learn how to report issues, suggest improvements, and contribute to the project.
 
-    [:octicons-arrow-right-24: Contributing guide](contributing.md)
+    [-> Contributing guide](contributing.md)
 
 -   **Project updates**
 
@@ -141,7 +141,7 @@ The documentation includes Jupyter notebooks exploring different geospatial work
 
     Follow changes, improvements, and new features.
 
-    [:octicons-arrow-right-24: Changelog](changelog.md)
+    [-> Changelog](changelog.md)
 
 </div>
 
