@@ -1,4 +1,3 @@
-
 # 🌐 geogradev
 
 ### Geospatial analysis, mapping, and Python tools for exploring our world.
@@ -10,15 +9,15 @@ It brings together geography, geomatics, programming, and open-source technologi
 From interactive mapping to spatial data processing, geogradev is a space for developing, testing, documenting, and sharing geospatial tools and applications.
 
 <p align="center">
-  <a href="installation/">
+  <a href="installation.md">
     <strong>Get Started</strong>
   </a>
   &nbsp;&nbsp;
-  <a href="examples/intro/">
+  <a href="examples/intro.ipynb">
     <strong>Explore Examples</strong>
   </a>
   &nbsp;&nbsp;
-  <a href="geogradev/">
+  <a href="geogradev.md">
     <strong>API Reference</strong>
   </a>
 </p>
@@ -29,37 +28,37 @@ From interactive mapping to spatial data processing, geogradev is a space for de
 
 <div class="grid cards" markdown>
 
--   :material-map-search:{ .lg .middle } **Interactive Mapping**
+-   🌐 **Interactive Mapping**
 
     ---
 
     Create and explore interactive maps using Python and geospatial tools.
 
-    [:octicons-arrow-right-24: Explore mapping examples](examples/map/)
+    [Explore mapping examples](examples/map.ipynb)
 
--   :material-layers-triple:{ .lg .middle } **Geospatial Data Processing**
+-   🗺️ **Geospatial Data Processing**
 
     ---
 
     Explore workflows for working with geographic data, including vector and raster data.
 
-    [:octicons-arrow-right-24: Explore raster examples](examples/raster/)
+    [Explore raster examples](examples/raster.ipynb)
 
--   :material-earth:{ .lg .middle } **GIS and Environmental Applications**
+-   🌍 **GIS and Environmental Applications**
 
     ---
 
     Discover practical applications of geospatial technologies, including environmental and territorial analysis.
 
-    [:octicons-arrow-right-24: Explore the notebooks](examples/)
+    [Explore the notebooks](examples/Communities_Native.ipynb)
 
--   :material-notebook:{ .lg .middle } **Reproducible Learning**
+-   📓 **Reproducible Learning**
 
     ---
 
     Learn from Jupyter notebooks, scripts, and practical geospatial exercises.
 
-    [:octicons-arrow-right-24: Start learning](examples/intro/)
+    [Start learning](examples/intro.ipynb)
 
 </div>
 
@@ -83,10 +82,12 @@ print(geogradev.__version__)
 
 For installation requirements, dependencies, and additional instructions, see the installation guide.
 
-[Installation guide](installation/){ .md-button .md-button--primary }
-[Usage guide](usage/){ .md-button }
+[Installation guide](installation.md){ .md-button .md-button--primary }
+
+[Usage guide](usage.md){ .md-button }
 
 !!! note "Dependencies and external services"
+
     Some geospatial workflows may require additional Python dependencies, datasets, or external services. Check the installation guide and the requirements of each module before running the examples.
 
 ---
@@ -102,9 +103,7 @@ The documentation includes Jupyter notebooks exploring different geospatial work
 | Google Earth Engine | Examples involving cloud-based geospatial analysis. |
 | Environmental applications | Exploratory workflows related to environmental and territorial topics. |
 
-Examples are provided for educational and exploratory purposes. Refer to each notebook for its data sources, dependencies, and execution requirements.
-
-[Browse all examples](examples/){ .md-button .md-button--primary }
+[Browse examples](examples/intro.ipynb){ .md-button .md-button--primary }
 
 ---
 
@@ -118,7 +117,7 @@ Examples are provided for educational and exploratory purposes. Refer to each no
 
     Installation instructions and introductory guides.
 
-    [:octicons-arrow-right-24: Getting Started](installation/)
+    [:octicons-arrow-right-24: Getting Started](installation.md)
 
 -   **API Reference**
 
@@ -126,7 +125,7 @@ Examples are provided for educational and exploratory purposes. Refer to each no
 
     Explore the package modules, functions, and available documentation.
 
-    [:octicons-arrow-right-24: API Reference](geogradev/)
+    [:octicons-arrow-right-24: API Reference](geogradev.md)
 
 -   **Contributing**
 
@@ -134,7 +133,7 @@ Examples are provided for educational and exploratory purposes. Refer to each no
 
     Learn how to report issues, suggest improvements, and contribute to the project.
 
-    [:octicons-arrow-right-24: Contributing guide](contributing/)
+    [:octicons-arrow-right-24: Contributing guide](contributing.md)
 
 -   **Project updates**
 
@@ -142,7 +141,7 @@ Examples are provided for educational and exploratory purposes. Refer to each no
 
     Follow changes, improvements, and new features.
 
-    [:octicons-arrow-right-24: Changelog](changelog/)
+    [:octicons-arrow-right-24: Changelog](changelog.md)
 
 </div>
 
@@ -167,7 +166,7 @@ As the project evolves, its functionality, documentation, and examples will cont
 
 Suggestions, feedback, bug reports, and contributions are welcome.
 
-- [Read the Contributing Guide](contributing/)
+- [Read the Contributing Guide](contributing.md)
 - [Report an issue or suggest a feature](https://github.com/mercedes1996/geogradev/issues)
 
 ## 📑 License

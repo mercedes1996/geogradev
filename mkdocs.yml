@@ -64,7 +64,6 @@ markdown_extensions:
       linenums: true
   - toc:
       permalink: true
-
 nav:
   - Home: index.md
   - Getting Started:
