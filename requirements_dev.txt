@@ -22,7 +22,7 @@ mkdocstrings-python-legacy
 nbconvert
 nbformat
 pygments
-pymdown-extensions<12.2
+pymdown-extensions
 pytest
 pytest-runner
 sphinx
