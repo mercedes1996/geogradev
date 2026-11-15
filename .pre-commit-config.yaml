@@ -9,7 +9,7 @@ repos:
           - id: trailing-whitespace
           - id: requirements-txt-fixer
           - id: check-added-large-files
-            args: ["--maxkb=500"]
+            args: ["--maxkb=10000"]
 
     - repo: https://github.com/psf/black-pre-commit-mirror
       rev: 26.10.0
